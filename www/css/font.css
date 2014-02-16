@@ -1,0 +1,511 @@
+.lettre .A {
+    background: url('../images/font.png') no-repeat -0px -384px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .B {
+    background: url('../images/font.png') no-repeat -78px -316px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .C {
+    background: url('../images/font.png') no-repeat -105px -281px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .D {
+    background: url('../images/font.png') no-repeat -181px -345px;
+    margin-top: 14px;
+    width: 24px;
+    height: 32px;
+}
+
+.lettre .Đ {
+    background: url('../images/font.png') no-repeat -184px -242px;
+    margin-top: 14px;
+    width: 27px;
+    height: 32px;
+}
+
+.lettre .E {
+    background: url('../images/font.png') no-repeat -26px -415px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .F {
+    background: url('../images/font.png') no-repeat -26px -382px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .G {
+    background: url('../images/font.png') no-repeat -0px -351px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .H {
+    background: url('../images/font.png') no-repeat -157px -279px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .I {
+    background: url('../images/font.png') no-repeat -233px -378px;
+    margin-top: 15px;
+    width: 14px;
+    height: 31px;
+}
+
+.lettre .J {
+    background: url('../images/font.png') no-repeat -52px -415px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .K {
+    background: url('../images/font.png') no-repeat -52px -382px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .L {
+    background: url('../images/font.png') no-repeat -52px -349px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .M {
+    background: url('../images/font.png') no-repeat -52px -316px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .N {
+    background: url('../images/font.png') no-repeat -131px -279px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .O {
+    background: url('../images/font.png') no-repeat -79px -281px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .P {
+    background: url('../images/font.png') no-repeat -52px -448px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .Q {
+    background: url('../images/font.png') no-repeat -0px -417px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .R {
+    background: url('../images/font.png') no-repeat -0px -283px;
+    margin-top: 14px;
+    width: 25px;
+    height: 33px;
+}
+
+.lettre .S {
+    background: url('../images/font.png') no-repeat -0px -317px;
+    margin-top: 14px;
+    width: 25px;
+    height: 33px;
+}
+
+.lettre .T {
+    background: url('../images/font.png') no-repeat -26px -316px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .U {
+    background: url('../images/font.png') no-repeat -53px -283px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .V {
+    background: url('../images/font.png') no-repeat -0px -450px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .W {
+    background: url('../images/font.png') no-repeat -183px -279px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .X {
+    background: url('../images/font.png') no-repeat -209px -277px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .Y {
+    background: url('../images/font.png') no-repeat -26px -349px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .Z {
+    background: url('../images/font.png') no-repeat -212px -242px;
+    margin-top: 14px;
+    width: 25px;
+    height: 33px;
+}
+
+.lettre .a {
+    background: url('../images/font.png') no-repeat -26px -481px;
+    margin-top: 16px;
+    width: 25px;
+    height: 30px;
+}
+
+.lettre .e {
+    background: url('../images/font.png') no-repeat -155px -380px;
+    margin-top: 18px;
+    width: 25px;
+    height: 28px;
+}
+
+.lettre .i {
+    background: url('../images/font.png') no-repeat -240px -41px;
+    margin-top: 14px;
+    width: 15px;
+    height: 32px;
+}
+
+.lettre .o {
+    background: url('../images/font.png') no-repeat -153px -474px;
+    margin-top: 18px;
+    width: 25px;
+    height: 28px;
+}
+
+.lettre .y {
+    background: url('../images/font.png') no-repeat -26px -448px;
+    margin-top: 18px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .u {
+    background: url('../images/font.png') no-repeat -78px -481px;
+    margin-top: 18px;
+    width: 25px;
+    height: 28px;
+}
+
+.lettre .b {
+    background: url('../images/font.png') no-repeat -130px -314px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .c {
+    background: url('../images/font.png') no-repeat -229px -410px;
+    margin-top: 18px;
+    width: 25px;
+    height: 28px;
+}
+
+.lettre .d {
+    background: url('../images/font.png') no-repeat -130px -347px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .f {
+    background: url('../images/font.png') no-repeat -156px -312px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .g {
+    background: url('../images/font.png') no-repeat -104px -347px;
+    margin-top: 18px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .h {
+    background: url('../images/font.png') no-repeat -104px -314px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .j {
+    background: url('../images/font.png') no-repeat -156px -167px;
+    margin-top: 14px;
+    width: 25px;
+    height: 36px;
+}
+
+.lettre .k {
+    background: url('../images/font.png') no-repeat -78px -382px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .l {
+    background: url('../images/font.png') no-repeat -234px -163px;
+    margin-top: 14px;
+    width: 19px;
+    height: 32px;
+}
+
+.lettre .m {
+    background: url('../images/font.png') no-repeat -0px -483px;
+    margin-top: 18px;
+    width: 25px;
+    height: 28px;
+}
+
+.lettre .n {
+    background: url('../images/font.png') no-repeat -207px -378px;
+    margin-top: 18px;
+    width: 25px;
+    height: 28px;
+}
+
+.lettre .p {
+    background: url('../images/font.png') no-repeat -78px -448px;
+    margin-top: 18px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .q {
+    background: url('../images/font.png') no-repeat -78px -349px;
+    margin-top: 18px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .r {
+    background: url('../images/font.png') no-repeat -52px -481px;
+    margin-top: 18px;
+    width: 25px;
+    height: 28px;
+}
+
+.lettre .s {
+    background: url('../images/font.png') no-repeat -179px -439px;
+    margin-top: 18px;
+    width: 25px;
+    height: 28px;
+}
+
+.lettre .t {
+    background: url('../images/font.png') no-repeat -182px -312px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .v {
+    background: url('../images/font.png') no-repeat -181px -378px;
+    margin-top: 18px;
+    width: 25px;
+    height: 28px;
+}
+
+.lettre .w {
+    background: url('../images/font.png') no-repeat -153px -445px;
+    margin-top: 18px;
+    width: 25px;
+    height: 28px;
+}
+
+.lettre .x {
+    background: url('../images/font.png') no-repeat -177px -410px;
+    margin-top: 18px;
+    width: 25px;
+    height: 28px;
+}
+
+.lettre .z {
+    background: url('../images/font.png') no-repeat -203px -408px;
+    margin-top: 18px;
+    width: 25px;
+    height: 28px;
+}
+
+.lettre .zero {
+    background: url('../images/font.png') no-repeat -104px -413px;
+    margin-top: 14px;
+    width: 24px;
+    height: 32px;
+}
+
+.lettre .un {
+    background: url('../images/font.png') no-repeat -234px -82px;
+    margin-top: 14px;
+    width: 19px;
+    height: 33px;
+}
+
+.lettre .deux {
+    background: url('../images/font.png') no-repeat -156px -345px;
+    margin-top: 14px;
+    width: 24px;
+    height: 32px;
+}
+
+.lettre .trois {
+    background: url('../images/font.png') no-repeat -104px -446px;
+    margin-top: 14px;
+    width: 24px;
+    height: 32px;
+}
+
+.lettre .quatre {
+    background: url('../images/font.png') no-repeat -208px -312px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .cinq {
+    background: url('../images/font.png') no-repeat -129px -445px;
+    margin-top: 14px;
+    width: 23px;
+    height: 32px;
+}
+
+.lettre .six {
+    background: url('../images/font.png') no-repeat -104px -380px;
+    margin-top: 14px;
+    width: 24px;
+    height: 32px;
+}
+
+.lettre .sept {
+    background: url('../images/font.png') no-repeat -231px -345px;
+    margin-top: 14px;
+    width: 24px;
+    height: 32px;
+}
+
+.lettre .huit {
+    background: url('../images/font.png') no-repeat -78px -415px;
+    margin-top: 14px;
+    width: 25px;
+    height: 32px;
+}
+
+.lettre .neuf {
+    background: url('../images/font.png') no-repeat -129px -412px;
+    margin-top: 14px;
+    width: 23px;
+    height: 32px;
+}
+
+.lettre .point {
+    background: url('../images/font.png') no-repeat -220px -458px;
+    margin-top: 32px;
+    width: 15px;
+    height: 14px;
+}
+
+.lettre .point_interrogation {
+    background: url('../images/font.png') no-repeat -153px -412px;
+    margin-top: 14px;
+    width: 23px;
+    height: 32px;
+}
+
+.lettre .point_exclamation {
+    background: url('../images/font.png') no-repeat -234px -310px;
+    margin-top: 14px;
+    width: 14px;
+    height: 32px;
+}
+
+.lettre .deux_point {
+    background: url('../images/font.png') no-repeat -129px -478px;
+    margin-top: 17px;
+    width: 15px;
+    height: 29px;
+}
+
+.lettre .virgule {
+    background: url('../images/font.png') no-repeat -205px -458px;
+    margin-top: 32px;
+    width: 14px;
+    height: 18px;
+}
+
+.lettre .plus {
+    background: url('../images/font.png') no-repeat -104px -479px;
+    margin-top: 17px;
+    width: 24px;
+    height: 25px;
+}
+
+.lettre .egal {
+    background: url('../images/font.png') no-repeat -205px -437px;
+    margin-top: 20px;
+    width: 23px;
+    height: 20px;
+}
+
+.lettre .moins {
+    background: url('../images/font.png') no-repeat -229px -439px;
+    margin-top: 24px;
+    width: 23px;
+    height: 13px;
+}
+
+.lettre .etoile {
+    background: url('../images/font.png') no-repeat -179px -468px;
+    margin-top: 14px;
+    width: 24px;
+    height: 22px;
+}
+
+.lettre .barrer {
+    background: url('../images/font.png') no-repeat -206px -345px;
+    margin-top: 14px;
+    width: 24px;
+    height: 32px;
+}
+
