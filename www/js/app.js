@@ -103,22 +103,7 @@ $(document).ready(function() {
        		context.drawImage(player_img, left_clipboard, 0, width, height, this.left*ratioX, this.top*ratioY, width*ratioX, height*ratioY);       		
 	    }
 
-	}
-
-	// Class Background
-	var Background = function() {		
-		var bg_img = new Image();
-		bg_img.src = 'images/map.jpg';
-
-		var index_frame = 0;		
-		var left_clipboard = 0;
-		var width = 1920;
-		var height = 1080;
-
-	    this.draw = function(context) {	    	
-       		context.drawImage(bg_img, 0, 0, width, height, 0, 0, width*ratioX, height*ratioY);        		
-	    }
-	}
+	}	
 
 	var Menu = function(tab_1, tab_2) {
 		var tab_1_img = new Image();
@@ -150,85 +135,25 @@ $(document).ready(function() {
 		}
 	}
 
-	// Class Text
-	var Phrase = function(str, x, y) {
-		var phrase_img = new Image();
-		phrase_img.src = 'images/font.png';		
-		this.str = str;		
-		this.posX = x;
-		this.posY = y;
-		var charSpacing = 0;
-
-		this.draw = function(context) {			
-			var offSet = 0;
-			for(var i=0; i<this.str.length; i++) {
-				if(this.str[i] != " ") {
-					context.drawImage(phrase_img, fontData[this.str[i]].x, fontData[this.str[i]].y, fontData[this.str[i]].w, fontData[this.str[i]].h, (this.posX+offSet)*ratioX, (this.posY+fontData[this.str[i]].t)*ratioY, fontData[this.str[i]].w*ratioX, fontData[this.str[i]].h*ratioY);
-					offSet += fontData[this.str[i]].w + charSpacing;
-				} else {
-					offSet += 10;
-				}
-			}			
-		}
-	}
-
-	// Class Place
-	var Place = function(id, name, x, y, width, height, src) {
-		var place_img = new Image();
-		place_img.src = src;		
-		this.posX = x;
-		this.posY = y;
-		this.id = id;
-		this.width = width;
-		this.height = height;
-
-		this.draw = function(context) {						
-			context.drawImage(place_img, 0, 0, this.width, this.height, this.posX*ratioX, this.posY*ratioY, this.width*ratioX, this.height*ratioY);					
-		}
-
-		this.getX = function() {
-			return this.posX;
-		}
-
-		this.getY = function() {
-			return this.posY;
-		}
-
-		this.getWidth = function() {
-			return this.width;
-		}
-
-		this.getHeight = function() {
-			return this.height;
-		}
-	}	
-
-	// Class Boss extend Place	
-	var Boss = function(id, name, x, y, width, height, src) {
-		var _this = new Place(id, name, x, y, width, height, src);
-		return _this;
-	}	
-
-
-	var background = new Background();		
+	var background = new Background('images/map.jpg', ratioX, ratioY);		
 
 	var arr_place = [];	
-	arr_place[0] = new Place(0, 'Tower House', 109, 225, 280, 270, 'images/tower.png');
-	arr_place[1] = new Place(1, 'Cafe Shop', 1293, 600, 118, 157, 'images/cafe_shop.png');
-	arr_place[2] = new Place(2, 'Rock', 327, 651, 168, 171, 'images/rock.png');
-	arr_place[3] = new Place(3, 'Traffic Lights', 495, 354, 61, 106, 'images/traffic_lights.png');
-	arr_place[4] = new Place(4, 'Bus Stop', 981, 311, 228, 132, 'images/bus_stop.png');
-	arr_place[5] = new Place(5, 'Park', 655, 607, 352, 202, 'images/park.png');
-	arr_place[6] = new Place(6, 'Recycle Bin', 343, 113, 68, 73, 'images/recycle_bin.png');
+	arr_place[0] = new Place(0, 'Tower House', 109, 225, 280, 270, 'images/tower.png', ratioX, ratioY);
+	arr_place[1] = new Place(1, 'Cafe Shop', 1293, 600, 118, 157, 'images/cafe_shop.png', ratioX, ratioY);
+	arr_place[2] = new Place(2, 'Rock', 327, 651, 168, 171, 'images/rock.png', ratioX, ratioY);
+	arr_place[3] = new Place(3, 'Traffic Lights', 495, 354, 61, 106, 'images/traffic_lights.png', ratioX, ratioY);
+	arr_place[4] = new Place(4, 'Bus Stop', 981, 311, 228, 132, 'images/bus_stop.png', ratioX, ratioY);
+	arr_place[5] = new Place(5, 'Park', 655, 607, 352, 202, 'images/park.png', ratioX, ratioY);
+	arr_place[6] = new Place(6, 'Recycle Bin', 343, 113, 68, 73, 'images/recycle_bin.png', ratioX, ratioY);
 
 	var arr_boss = [];
-	arr_boss[0] = new Boss(0, 'TPE', 641, 80, 152, 170, 'images/boss_small.png');
-	arr_boss[1] = new Boss(1, 'TME', 913, 872, 152, 170, 'images/boss_small.png');
-	arr_boss[2] = new Boss(2, 'GE', 1485, 535, 306, 333, 'images/boss_big.png');
+	arr_boss[0] = new Boss(0, 'TPE', 641, 80, 152, 170, 'images/boss_small.png', ratioX, ratioY);
+	arr_boss[1] = new Boss(1, 'TME', 913, 872, 152, 170, 'images/boss_small.png', ratioX, ratioY);
+	arr_boss[2] = new Boss(2, 'GE', 1485, 535, 306, 333, 'images/boss_big.png', ratioX, ratioY);
 
 	var player = new Player('Name', 5);
 	
-	var str_lvl = new Phrase("Max Level", 1700, 10);
+	var str_lvl = new Phrase("Max Level", 1700, 10, ratioX, ratioY);
 
 	function play() {	
 		time_count++;
