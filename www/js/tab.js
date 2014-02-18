@@ -13,19 +13,15 @@
 				&& mouse_position['y'] > this.posY*ratioY && mouse_position['y'] < (this.posY + this.height)*ratioY) {
 					if(command === 'start') {												
 						id_page = 1;						
-						//navigator.app.loadUrl("file://F:/BeMyJob/BeMyJob_PHAN_LE/www/map.html");
 					} else if(command === 'exit') {						
-						alert('exit');
-						//navigator.notification.alert("Are you sure you want to exit ?", onConfirm, "Confirmation", "Yes,No"); 												
-						//navigator.app.exitApp();
+						navigator.notification.confirm("Are you sure you want to exit ?", onConfirm, "Confirmation", ["Yes","No"]); 												
 					}
 				}
 		}
 		
 		function onConfirm(button) {
-			
-			//navigator.app.exitApp();	// Otherwise we quit the app.
-			
+			if (button == 1)
+				navigator.app.exitApp();	// Otherwise we quit the app.			
 		}
 
 	    this.draw = function() {	    	

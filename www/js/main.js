@@ -55,17 +55,21 @@ $(document).ready(function() {
 	// End Init value and event
 
 	/* Init object */
+	var background = null;
+	var start_tab = null;
+	var exit_tab = null;
+	var player = null;
 
 	// Init pageaccueil  <=> id_page = 0
-	function initPageAccueil() {
-		bg_welcome = new Background('images/menu.jpg');
+	function initPageAccueil() {				
+		background = new Background('images/menu.jpg');
 		start_tab  = new MenuTab('images/start.png', 248, 59, 837, 727);
 		exit_tab   = new MenuTab('images/exit.png', 186, 61, 864, 824);
 	}			
 
 	// Init la carte     <=> id_page = 1
 	function initCarte() {
-		bg_map = new Background('images/map.jpg');		
+		background = new Background('images/map.jpg');		
 
 		arr_place[0] = new Place(0, 'Tower House', 109, 225, 280, 270, 'images/tower.png');
 		arr_place[1] = new Place(1, 'Cafe Shop', 1293, 600, 118, 157, 'images/cafe_shop.png');
@@ -84,12 +88,11 @@ $(document).ready(function() {
 
 	// Init la thème "question - réponse"
 	function initAnswer() {
-		bg_answer = new Background('images/questionScene.jpg');		
+		background = new Background('images/questionScene.jpg');		
 		arr_answer[0] = new Answer('Answer 1', 69, 674);
 		arr_answer[1] = new Answer('Answer 2', 690, 674);
 		arr_answer[2] = new Answer('Answer 3', 1320, 674);
 	}
-
 	
 	// Commencer !!! 
 
@@ -106,7 +109,7 @@ $(document).ready(function() {
 				initPageAccueil();
 				is_load[id_page] = true;
 			}
-			bg_welcome.draw();
+			background.draw();
 			if(is_mouse_click) {				
 				start_tab.update('start');								
 				exit_tab.update('exit');							
@@ -119,7 +122,7 @@ $(document).ready(function() {
 				initCarte();
 				is_load[id_page] = true;
 			}
-			bg_map.draw();					
+			background.draw();				
 			for(var i=0; i<arr_place.length; i++) {
 				arr_place[i].draw();
 			}
@@ -134,7 +137,7 @@ $(document).ready(function() {
 				initAnswer();
 				is_load[id_page] = true;
 			}
-			bg_answer.draw();							
+			background.draw();							
 			for (var i=0; i<arr_answer.length; i++) {
 				arr_answer[i].update();
 				arr_answer[i].draw();

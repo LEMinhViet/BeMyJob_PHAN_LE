@@ -1,7 +1,7 @@
 // Class Place
-var Place = function(id, name, x, y, width, height, src, ratioX, ratioY) {
+var Place = function(id, name, x, y, width, height, src) {
 	var place_img = new Image();
-	place_img.src = src;		
+	place_img.src = src;
 	
 	this.ratioX = ratioX;
 	this.ratioY = ratioY;
@@ -11,8 +11,8 @@ var Place = function(id, name, x, y, width, height, src, ratioX, ratioY) {
 	this.width = width;
 	this.height = height;
 
-	this.draw = function(context) {						
-		context.drawImage(place_img, 0, 0, this.width, this.height, this.posX*ratioX, this.posY*ratioY, this.width*ratioX, this.height*ratioY);					
+	this.draw = function() {					
+		context.drawImage(place_img, 0, 0, this.width, this.height, this.posX*ratioX, this.posY*ratioY, this.width*ratioX, this.height*ratioY);
 	}
 
 	this.getX = function() {
@@ -30,10 +30,4 @@ var Place = function(id, name, x, y, width, height, src, ratioX, ratioY) {
 	this.getHeight = function() {
 		return this.height;
 	}
-}	
-
-// Class Boss extend Place	
-var Boss = function(id, name, x, y, width, height, src, ratioX, ratioY) {
-	var _this = new Place(id, name, x, y, width, height, src, ratioX, ratioY);
-	return _this;
-}	
+}
