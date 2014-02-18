@@ -105,36 +105,6 @@ $(document).ready(function() {
 
 	}	
 
-	var Menu = function(tab_1, tab_2) {
-		var tab_1_img = new Image();
-		tab_1_img.src = 'images/onglet_annees_gauche.png';
-		var tab_2_img = new Image();
-		tab_2_img.src = 'images/onglet_annees_gauche_on.png';
-
-		this.tab_1 = {
-			x: tab_1.x,
-			y: tab_1.y
-		}
-
-		this.tab_2 = {
-			x: tab_2.x,
-			y: tab_2.y
-		}		
-
-		var init_x_1 = 50;
-		var init_x_2 = 50;
-		this.drawMenu = function(context) {			
-			if(this.tab_1.x < init_x_1) {
-				this.tab_1.x += 1;
-			}
-			if(this.tab_2.x < init_x_2) {
-				this.tab_2.x += 1;
-			}
-			context.drawImage(tab_1_img, 0, 0, 104, 18, this.tab_1.x, this.tab_1.y, 104, 18);
-			context.drawImage(tab_2_img, 0, 0, 104, 18, this.tab_2.x, this.tab_2.y, 104, 18);
-		}
-	}
-
 	var background = new Background('images/map.jpg', ratioX, ratioY);		
 
 	var arr_place = [];	
