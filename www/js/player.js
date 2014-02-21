@@ -9,8 +9,8 @@ var Player = function(name, rate) {
 	var height = 128;
 	this.rate = rate;
 	this.name   = name;
-	this.left   = arr_place[0].getX()+arr_place[0].getWidth()/2-width/2;
-	this.top    = arr_place[0].getY()+arr_place[0].getHeight()-height;
+	this.left   = arr_place[id_place].getX()+arr_place[id_place].getWidth()/2-width/2;
+	this.top    = arr_place[id_place].getY()+arr_place[id_place].getHeight()-height;
 
     this.update = function() {
     		// left: 37, right: 39, up: 38, down: 40  
@@ -23,9 +23,10 @@ var Player = function(name, rate) {
 	    				this.top = (arr_place[i].getY()+arr_place[i].getHeight()-height);		    					    				
 	    				if(id_place == i) {
 	    					// Enter the place	    					
-							id_page = 2;							
+							id_page = 3; //aller au thème "question-réponse"
+                            is_load[id_page] = false;
 	    				}
-	    				id_place = i;
+	    				id_place = i;                        
 	    				break;
 	            	}	
             	}
@@ -34,9 +35,7 @@ var Player = function(name, rate) {
 	            		this.left = (arr_boss[i].getX()+arr_boss[i].getWidth()/2-width/2);
 	    				this.top = (arr_boss[i].getY()+arr_boss[i].getHeight()-height);		    				
 	            	}	
-            	}
-            	
-				is_mouse_click = false;
+            	}            					
             }
 
             // choose a frame in image 

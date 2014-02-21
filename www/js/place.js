@@ -2,9 +2,7 @@
 var Place = function(id, name, x, y, width, height, src) {
 	var place_img = new Image();
 	place_img.src = src;
-	
-	this.ratioX = ratioX;
-	this.ratioY = ratioY;
+		
 	this.posX = x;
 	this.posY = y;
 	this.id = id;
